@@ -8,13 +8,17 @@
 	<script>
 		var user = {
 			email: "tomonori@gmail.com", // プロパティ
-			score: 80
+			score: 80,
+			greet: function(name){ // メソッド
+				console.log("hello " + name + " from " + this.email);
+			}
 		};
 
 		console.log(user["email"]);
 		console.log(user.email);
 		user.score = 100
-		console.log(user);		
+		console.log(user);
+		user.greet("TOM");		
 	</script>
 </body>
 </html>
