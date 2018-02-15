@@ -6,13 +6,20 @@
 </head>
 <body>
 	<script>
-		var score = 50;
-		if (score > 60){
-			console.log("合格点");
-		} else if (score > 40){
-			console.log("40点以上");
-		} else {
-			console.log("不合格");
+		var signal = "yellow";
+		switch(signal){
+			case "red":
+				console.log("stop!!");
+				 break;
+			case "green":
+				console.log("GO!!");
+				break;
+			case "yellow":
+				console.log("CAUTION!!");
+				break;
+			default:
+				console.log("そんなのねえよ");
+				break;
 		}
 	</script>
 </body>
