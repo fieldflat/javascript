@@ -6,18 +6,15 @@
 </head>
 <body>
 	<script>
-		/*
-		var score = [100, 300, 500, "hirata"];
-		score[2] = 400;
-		console.log(score[3]);
-		*/
+		var user = {
+			email: "tomonori@gmail.com", // プロパティ
+			score: 80
+		};
 
-		var matrix = [
-			[1,2,3], 
-			[4,5,6],
-			[7,8,9]
-		]
-		console.log(matrix[1][1]);
+		console.log(user["email"]);
+		console.log(user.email);
+		user.score = 100
+		console.log(user);		
 	</script>
 </body>
 </html>
