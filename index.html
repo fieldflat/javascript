@@ -6,11 +6,12 @@
 </head>
 <body>
 	<script>
-		//alert("hello");
-		//var answer = confirm("are you sure?");
-		//console.log(answer);
-		var name = prompt("お名前はなんですか?", "名無しさん");
-		console.log(name)
+		function hello(name){
+			var msg = "hello " + name;
+			return msg;
+		}
+		var greet = hello("平田智紀")
+		console.log(greet);
 	</script>
 </body>
 </html>
