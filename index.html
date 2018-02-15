@@ -6,14 +6,23 @@
 </head>
 <body>
 	<script>
-		(function(name) {
-			console.log("hello " + name);
-		})("TOM");
+		var i = 0;
+		function show(){
+			console.log(i++);
+			var tid = setTimeout(function(){
+				show();
+			}, 1000);
+			if (i > 3)
+				clearTimeout(tid);
+		}
+		/*
+		setInterval(function(){
+			show();
+		}, 1000);
+		*/
+		show();
 
-		(function() {
-		var x = 10, y = 20;
-		console.log(x + y)
-		})();
+
 	</script>
 </body>
 </html>
