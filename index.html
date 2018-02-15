@@ -6,12 +6,14 @@
 </head>
 <body>
 	<script>
-		var hello = function(name){ // 無名関数、匿名関数
-			var msg = "hello " + name;
-			return msg;
-		}; // ;忘れずに
-		var greet = hello("TOM");
-		console.log(greet);
+		(function(name) {
+			console.log("hello " + name);
+		})("TOM");
+
+		(function() {
+		var x = 10, y = 20;
+		console.log(x + y)
+		})();
 	</script>
 </body>
 </html>
