@@ -6,12 +6,19 @@
 </head>
 <body>
 	<script>
-		var a = new Array(100, 300, 500);
-		console.log(a.length);
-		a.push(500);
-		console.log(a);
-		a.splice(1, 2, 800, 1000, 2, 3, 5); // 削除する(第1要素から2つ分)
-		console.log(a);
+		console.log(Math.PI);
+		console.log(Math.ceil(5.3));
+		console.log(Math.floor(5.3));
+		console.log(Math.round(5.3));
+		console.log(Math.random());
+
+		var d = new Date();
+		/* 以下の場合、2014年 2月11日 10時20分30秒 */
+		// var d = new Date(2014, 1, 11, 10, 20, 30);
+
+		console.log(d.getFullYear());
+		console.log(d.getMonth());
+		console.log(d.getTime()); // 1970/1/1 からの経過ミリ秒
 	</script>
 </body>
 </html>
